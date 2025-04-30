@@ -1,19 +1,8 @@
 package food;
 
-public class Food {
-    private String name;
-    private int price;
+public class Food extends Menu {
 
-    Food(String name, int price) {
-        this.name = name;
-        this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getPrice() {
-        return price;
+    Food(String name, int price, String description) {
+        super(name, price, description);
     }
 }
